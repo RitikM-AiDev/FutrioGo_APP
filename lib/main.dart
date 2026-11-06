@@ -414,9 +414,7 @@ class _AssistantOverlayScreenState extends State<AssistantOverlayScreen> {
                                     IconButton(
                                       icon: const Icon(Icons.close,
                                           size: 20, color: AppColors.textMuted),
-                                      onPressed: () => _overlayChannel
-                                          .invokeMethod('closeOverlay')
-                                          .catchError((_) => SystemNavigator.pop()),
+                                      onPressed: () => SystemNavigator.pop(),
                                       tooltip: 'Close Overlay',
                                     ),
                                   ],
